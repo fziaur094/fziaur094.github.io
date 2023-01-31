@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+    height: 100%;
+    font-size: 0.25in;
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(120deg, #ddd, #eee);
+}
+
+main {
+    border: 1px solid #999;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.667);
+    border-radius: 6px;
+    
+    background: linear-gradient(60deg,#eee, #eee, #fff);
+
+    display: block;
+    box-sizing: border-box;
+    width: 6in;
+    height: 4in;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -2in;
+    margin-left: -3in;
+    padding: 0.5in 0.85in;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Gentium Book Plus', 'Times New Roman', Times, serif;
+    vertical-align: bottom;
+}
+
+h1 + h3 {
+    margin-top: -1em;
+    font-weight: normal;
+}
+
+ul#Links, ul#TechSyms {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul#Links > li,
+ul#TechSyms > li {
+    display: inline-block;
+}
+
+svg.inline-icon {
+    display: inline;
+    height: 0.85em;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: #555;
+}
+
+a > svg.inline-icon {
+    opacity: 1;
+    transition: opacity margin padding 200ms ease-out;
+    padding: 0.15em;
+    border-radius: 2px;
+}
+
+a:hover > svg.inline-icon {
+    opacity: 0.75;
+    transition: opacity margin padding 200ms ease-in;
+    box-shadow: inset 1px 1px 2px gray;
+}
+
+footer {
+    display: block;
+    position: absolute;
+    right: 0.85in;
+    bottom: 0.5in;
+    border-bottom: 1px dashed #666;
+    border-top: 1px dashed #666;
+}
+
+footer > img {
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 0.667em;
+}
+
+footer > *::before {
+    content: "•";
+    margin-right: 0.5em;
+}
+
+footer .viper-insignia,
+footer .rio-insignia {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0.85em;
+    margin: 0 0.15em;
+}
+
+footer .viper-accent {
+    color: #1067C5;
+    font-weight: bold;
+}
+
+footer .rio-accent {
+    color: #C9224A;
+    font-weight: bold;
+}
